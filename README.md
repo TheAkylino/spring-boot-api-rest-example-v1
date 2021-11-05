@@ -1,0 +1,2 @@
+# spring-boot-api-rest-example-v1
+SPRING BOOT API REST EXAMPLE V1 USING: JPA, HIBERNATE ,H2, MYSQL ,SWAGGER
