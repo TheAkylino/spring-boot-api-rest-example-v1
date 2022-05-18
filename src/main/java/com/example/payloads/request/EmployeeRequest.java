@@ -3,8 +3,10 @@ package com.example.payloads.request;
 import com.example.models.entity.Department;
 import lombok.*;
 
+import javax.persistence.Column;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.Id;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
@@ -16,23 +18,16 @@ import javax.validation.constraints.NotNull;
 @ToString
 @EqualsAndHashCode
 public class EmployeeRequest {
-
-    @NotBlank
-    @NotNull
+    private String id;
     private String firstName;
-    @NotBlank
-    @NotNull
-    private String lastname;
-    @NotBlank
-    @NotNull
+    private String lastName;
+    private String address;
+    private String city;
+    private String state;
+    private String countryName;
     private String phoneNumber;
-    @Email
+    private String employeeAge;
     private String email;
-    @NotBlank
-    @NotNull
-    private double salary;
-    @NotBlank
-    @NotNull
-    @Enumerated(EnumType.STRING)
     private Department department;
+    private double salary;
 }

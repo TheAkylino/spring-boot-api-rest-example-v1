@@ -1,12 +1,12 @@
 package com.example.models.service;
 
-import com.example.models.entity.Employee;
+import com.example.models.entity.Employees;
 import org.springframework.stereotype.Component;
 
 
 import java.util.List;
 
 @Component
-public interface EmployeeService {
-    List<Employee> allEmployee();
+public interface IEmployeeService {
+    List<Employees> allEmployee();
 }
